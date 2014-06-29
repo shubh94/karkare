@@ -39,7 +39,7 @@
                 bottom: 0;
                 left: 0;
                 width: 60%;
-                height: 100%;
+                height: 80%;
             }
     </style>
 
@@ -73,21 +73,48 @@ var STYLE_PREFIX = 'wsite';
         <div class="container">
    			<div id='wsite-content' class='wsite-elements wsite-not-footer'>
    			<h2 class="wsite-content-title" style="text-align:center;">Practice Problems</h2>
-				<div id="editor">
-        function foo(items) {
-            var x = "All this is syntax highlighted";
-            return x;
-        }
-    </div>
-    <div style="float:right;">
-    	INPUT<br>
-    	<textarea rows="10" cols="32" style=" resize: none;"></textarea>
-    </div>
+   			<table>
+				<tr>
+					<td width="70%" rowspan="3">
+						<div id="editor" >
+		        			function foo(items) {
+        					    var x = "All this is syntax highlighted";
+					            return x;
+       						 }
+    					</div>
+    				</td>
+    				<td width="30%">
+    					<div>
+    						INPUT<br>
+    						<textarea rows="10" cols="32" style=" resize: none;"></textarea>
+    					</div>
+    				</td>
+    			</tr>
+    			<tr>
+    				<td>
+    					<div>
+    						OUTPUT<br>
+    						<textarea rows="10" cols="32" style=" resize: none;"></textarea>
+    					</div>
+    				</td>
+    			</tr>
+    			<tr>
+    				<td>
+    					<button><i class="fa fa-gear"></i>
+    						Run</button>
+    				</td>
+    			</tr>
+    		</table>
+    		<br>
 			</div>
         </div><!-- end container -->
     </div><!-- end main-wrap -->
   
-  	
+  	<div id="footer-wrap">
+  		<div class="container">
+  				iuehfui
+  		</div>
+  	</div>
 	<script type="text/javascript" src="files/theme/jquery.jqtransform.js" ></script>
 
 	<script language="javascript">
@@ -106,7 +133,7 @@ var STYLE_PREFIX = 'wsite';
 			});
 		});
 	</script>
-
+	<link rel="stylesheet" type="text/css" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.1.0/css/font-awesome.min.css"></link>
     <script src="http://d1n0x3qji82z53.cloudfront.net/src-min-noconflict/ace.js" type="text/javascript" charset="utf-8"></script>
     <script>
         var editor = ace.edit("editor");
